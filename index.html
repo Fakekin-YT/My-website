@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Kin Bio">
+    <meta property="og:description" content="Explore my life and passions">
+    <meta property="og:image" content="https://source.unsplash.com/1600x900/?technology,futuristic">
+    <meta property="og:url" content="https://your-destination-url.com">
+    <title>Kin Bio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d0d0d;
+            color: #fff;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            position: fixed;
+            top: 0;
+            padding: 20px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+        .navbar a {
+            color: #00ffcc;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #ff005a;
+        }
+
+        /* Hero Section Styling */
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background: url('https://source.unsplash.com/1600x900/?technology,futuristic') no-repeat center center/cover;
+        }
+        .header-content {
+            backdrop-filter: blur(4px);
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+        }
+        .header h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4rem;
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px #00ffcc, 0 0 20px #ff005a;
+            animation: glow 2s infinite alternate;
+        }
+        .header p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            opacity: 0.8;
+        }
+        .header button {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #00ffcc, #ff005a);
+            border: none;
+            border-radius: 30px;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .header button:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+            }
+            to {
+                text-shadow: 0 0 30px #ff005a, 0 0 60px #ff005a;
+            }
+        }
+
+        /* Games Section Styling */
+        .games {
+            padding: 80px 20px;
+            background-color: #151515;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .game {
+            background: rgba(255, 255, 255, 0.1);
+            width: 300px;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 15px;
+            transition: transform 0.4s;
+            box-shadow: 0 0 30px rgba(0, 255, 204, 0.3);
+        }
+        .game:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 0 30px rgba(255, 0, 90, 0.8);
+        }
+        .game img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .game h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #00ffcc;
+        }
+        .game p {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        .game button {
+            padding: 10px 20px;
+            background-color: #00ffcc;
+            border: none;
+            border-radius: 20px;
+            color: #0d0d0d;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .game button:hover {
+            background-color: #ff005a;
+            color: #fff;
+        }
+
+        /* Call-to-Action Section Styling */
+        .cta {
+            background: linear-gradient(135deg, #ff005a, #00ffcc);
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .cta button {
+            padding: 12px 40px;
+            background-color: #fff;
+            color: #0d0d0d;
+            border-radius: 30px;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .cta button:hover {
+            background-color: #00ffcc;
+            color: #fff;
+        }
+
+        /* Footer Section Styling */
+        .footer {
+            background-color: #0d0d0d;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Games</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="header">
+        <div class="header-content">
+            <h1>Kin Bio</h1>
+            <p>A journey through my life and passions</p>
+            <button>Discover More</button>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games">
+        <div class="game">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/2048px-Steam_icon_logo.svg.png" alt="Steam" loading="lazy">
+            <h2>Steam</h2>
+            <p>Explore all the different games online.</p>
+            <button onclick="window.location.href='https://steamcommunity.com/profiles/76561199209918598/'">Visit my Steam profile</button>
+        </div>
+        <div class="game">
+            <img src="https://m.media-amazon.com/images/I/51rttY7a+9L.png" alt="Spotify" loading="lazy">
+            <h2>Spotify</h2>
+            <p>The beauty of listening to music.</p>
+            <button onclick="window.location.href='https://open.spotify.com/user/31yi7du5x3gopq37mu24yex3yf34'">Visit my Spotify Profile</button>
+        </div>
+        <div class="game">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA8tp_RfCEDIf6Q8t3UK2k014lUZNBMbnQj6CVRqiR22jZouRsjj7YFfOnsS64Otvvw6E&usqp=CAU" alt="Roblox" loading="lazy">
+            <h2>Roblox</h2>
+            <p>Create, explore, and share worlds in Roblox.</p>
+            <button onclick="window.location.href='https://www.roblox.com/users/1711315566/profile'">Visit My Roblox Profile</button>
+        </div>
+        <!-- Add more games as needed -->
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta">
+        <h2>Ready to Explore More About Me?</h2>
+        <button onclick="window.location.href='https://your-destination-url.com'">Teleport Now</button>``
+    </section>
+
+    <!-- Footer Section
+
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/your-username/my-website.git
