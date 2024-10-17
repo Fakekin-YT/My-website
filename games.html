@@ -9,11 +9,13 @@
     <title>Games</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <style>
+        /* Updated CSS Styles */
         body {
+            margin: 0;
+            padding-top: 80px; /* To prevent overlapping with navbar */
             font-family: 'Poppins', sans-serif;
             background-color: #0d0d0d;
             color: #fff;
-            text-align: center;
         }
 
         .navbar {
@@ -21,18 +23,34 @@
             background: rgba(255, 255, 255, 0.1);
             position: fixed;
             top: 0;
-            padding: 20px;
+            padding: 15px;
             z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             backdrop-filter: blur(10px);
         }
 
         .navbar a {
             color: #00ffcc;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px; /* Better spacing between links */
             font-size: 1.1rem;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ff005a;
+        }
+
+        /* Game Card Styles */
+        .games {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
         }
 
         .game {
@@ -40,35 +58,28 @@
             padding: 20px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
-            display: inline-block;
-            width: 300px;
-            color: #00ffcc;
-            text-align: center;
-            transition: transform 0.4s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
         }
 
         .game img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
+            width: 100px;
+            margin-bottom: 10px;
         }
 
         .game a {
-            display: inline-block;
+            color: #00ffcc;
             text-decoration: none;
-            margin-top: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
         }
 
-        .game a img {
-            width: 120px;
-            height: auto;
-            border-radius: 10px;
+        .game a:hover {
+            color: #ff005a;
         }
 
-        .game:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 0 30px rgba(255, 0, 90, 0.8);
-        }
     </style>
 </head>
 <body>
@@ -81,76 +92,41 @@
 
     <h1>My Favorite Games</h1>
 
-    <!-- Games Section -->
     <div class="games">
-        <!-- Valorant -->
         <div class="game">
             <h2>Valorant</h2>
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Valorant_logo.svg/1200px-Valorant_logo.svg.png" alt="Valorant">
-            <br><br>
-            <a href="https://playvalorant.com" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Valorant_logo.svg/1200px-Valorant_logo.svg.png" alt="Play Valorant">
-            </a>
+            <a href="https://playvalorant.com/" target="_blank">Play Valorant</a>
         </div>
-
-        <!-- CS2 -->
         <div class="game">
             <h2>CS2</h2>
             <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Counter-Strike_2_logo.png" alt="CS2">
-            <br><br>
-            <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Counter-Strike_2_logo.png" alt="Play CS2">
-            </a>
+            <a href="https://www.counter-strike.net/cs2" target="_blank">Play CS2</a>
         </div>
-
-        <!-- Roblox -->
         <div class="game">
             <h2>Roblox</h2>
             <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Roblox_logo.png" alt="Roblox">
-            <br><br>
-            <a href="https://www.roblox.com" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Roblox_logo.png" alt="Play Roblox">
-            </a>
+            <a href="https://www.roblox.com/" target="_blank">Play Roblox</a>
         </div>
-
-        <!-- Forza Horizon 4 -->
         <div class="game">
             <h2>Forza Horizon 4</h2>
             <img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Forza_Horizon_4_logo.png" alt="Forza Horizon 4">
-            <br><br>
-            <a href="https://www.xbox.com/en-US/games/forza-horizon-4" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Forza_Horizon_4_logo.png" alt="Play Forza Horizon 4">
-            </a>
+            <a href="https://www.xbox.com/en-US/games/forza-horizon-4" target="_blank">Play Forza Horizon 4</a>
         </div>
-
-        <!-- Phasmophobia -->
         <div class="game">
             <h2>Phasmophobia</h2>
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Phasmophobia_logo.png/1200px-Phasmophobia_logo.png" alt="Phasmophobia">
-            <br><br>
-            <a href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Phasmophobia_logo.png/1200px-Phasmophobia_logo.png" alt="Play Phasmophobia">
-            </a>
+            <a href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">Play Phasmophobia</a>
         </div>
-
-        <!-- Assetto Corsa -->
         <div class="game">
             <h2>Assetto Corsa</h2>
             <img src="https://upload.wikimedia.org/wikipedia/en/a/a1/Assetto_Corsa_Logo.png" alt="Assetto Corsa">
-            <br><br>
-            <a href="https://store.steampowered.com/app/244210/Assetto_Corsa/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/en/a/a1/Assetto_Corsa_Logo.png" alt="Play Assetto Corsa">
-            </a>
+            <a href="https://www.assettocorsa.net/en/" target="_blank">Play Assetto Corsa</a>
         </div>
-
-        <!-- BeamNG.drive -->
         <div class="game">
             <h2>BeamNG.drive</h2>
             <img src="https://upload.wikimedia.org/wikipedia/en/e/ef/BeamNG.drive_Logo.png" alt="BeamNG.drive">
-            <br><br>
-            <a href="https://store.steampowered.com/app/284160/BeamNGdrive/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/en/e/ef/BeamNG.drive_Logo.png" alt="Play BeamNG.drive">
-            </a>
+            <a href="https://www.beamng.com/" target="_blank">Play BeamNG.drive</a>
         </div>
     </div>
 
