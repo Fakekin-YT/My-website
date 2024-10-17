@@ -7,28 +7,15 @@
     <meta property="og:description" content="Explore my favorite games">
     <meta property="og:image" content="https://source.unsplash.com/1600x900/?gaming">
     <title>Games</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <style>
-        /* Global Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Body Styling */
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #0d0d0d;
             color: #fff;
+            text-align: center;
         }
 
-        /* Navbar Styling */
         .navbar {
             width: 100%;
             background: rgba(255, 255, 255, 0.1);
@@ -36,11 +23,9 @@
             top: 0;
             padding: 20px;
             z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             backdrop-filter: blur(10px);
         }
+
         .navbar a {
             color: #00ffcc;
             text-decoration: none;
@@ -48,114 +33,42 @@
             font-size: 1.1rem;
             letter-spacing: 2px;
             text-transform: uppercase;
-            transition: color 0.3s ease;
-        }
-        .navbar a:hover {
-            color: #ff005a;
         }
 
-        /* Page Header */
-        .header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            background: url('https://source.unsplash.com/1600x900/?gaming') no-repeat center center/cover;
-        }
-        .header-content {
-            backdrop-filter: blur(4px);
-            padding: 50px;
-            background-color: rgba(0, 0, 0, 0.6);
-            border-radius: 20px;
-        }
-        .header h1 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 4rem;
-            letter-spacing: 5px;
-            text-shadow: 0 0 10px #00ffcc, 0 0 20px #ff005a;
-            animation: glow 2s infinite alternate;
-        }
-        .header p {
-            font-size: 1.2rem;
-            margin: 20px 0;
-            opacity: 0.8;
-        }
-
-        /* Games Section */
-        .games {
-            padding: 80px 20px;
-            background-color: #151515;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
         .game {
-            background: rgba(255, 255, 255, 0.1);
-            width: 300px;
+            margin: 20px;
             padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
+            display: inline-block;
+            width: 300px;
+            color: #00ffcc;
             text-align: center;
-            margin: 15px;
             transition: transform 0.4s;
-            box-shadow: 0 0 30px rgba(0, 255, 204, 0.3);
         }
-        .game:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 0 30px rgba(255, 0, 90, 0.8);
-        }
+
         .game img {
             width: 150px;
-            margin-bottom: 20px;
-            transition: transform 0.3s ease;
-        }
-        .game:hover img {
-            transform: scale(1.1);
-        }
-        .game h2 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            color: #00ffcc;
-        }
-        .game p {
-            font-size: 1rem;
-            opacity: 0.8;
-            margin-bottom: 15px;
-        }
-        .game button {
-            padding: 10px 20px;
-            background-color: #00ffcc;
-            border: none;
-            border-radius: 20px;
-            color: #0d0d0d;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        .game button:hover {
-            background-color: #ff005a;
-            color: #fff;
+            height: 150px;
+            object-fit: cover;
         }
 
-        /* Footer Section Styling */
-        .footer {
-            background-color: #0d0d0d;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            font-size: 0.9rem;
-            opacity: 0.8;
+        .game a {
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 20px;
         }
 
-        @keyframes glow {
-            from {
-                text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc;
-            }
-            to {
-                text-shadow: 0 0 30px #ff005a, 0 0 60px #ff005a;
-            }
+        .game a img {
+            width: 120px;
+            height: auto;
+            border-radius: 10px;
         }
 
+        .game:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px rgba(255, 0, 90, 0.8);
+        }
     </style>
 </head>
 <body>
@@ -164,67 +77,81 @@
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="games.html">Games</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
     </div>
 
-    <!-- Page Header -->
-    <section class="header">
-        <div class="header-content">
-            <h1>My Favorite Games</h1>
-            <p>Explore the games I love playing</p>
-        </div>
-    </section>
+    <h1>My Favorite Games</h1>
 
     <!-- Games Section -->
-    <section class="games">
+    <div class="games">
+        <!-- Valorant -->
         <div class="game">
             <h2>Valorant</h2>
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Valorant_logo.svg/1200px-Valorant_logo.svg.png" alt="Valorant">
-            <p>A tactical first-person shooter game.</p>
-            <button>Play Now</button>
+            <br><br>
+            <a href="https://playvalorant.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Valorant_logo.svg/1200px-Valorant_logo.svg.png" alt="Play Valorant">
+            </a>
         </div>
+
+        <!-- CS2 -->
         <div class="game">
             <h2>CS2</h2>
             <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Counter-Strike_2_logo.png" alt="CS2">
-            <p>Counter-Strike 2 - the legendary FPS.</p>
-            <button>Play Now</button>
+            <br><br>
+            <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Counter-Strike_2_logo.png" alt="Play CS2">
+            </a>
         </div>
+
+        <!-- Roblox -->
         <div class="game">
             <h2>Roblox</h2>
             <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Roblox_logo.png" alt="Roblox">
-            <p>An open-world platform for creativity and games.</p>
-            <button>Explore Now</button>
+            <br><br>
+            <a href="https://www.roblox.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Roblox_logo.png" alt="Play Roblox">
+            </a>
         </div>
+
+        <!-- Forza Horizon 4 -->
         <div class="game">
             <h2>Forza Horizon 4</h2>
             <img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Forza_Horizon_4_logo.png" alt="Forza Horizon 4">
-            <p>Race through a dynamic open world.</p>
-            <button>Race Now</button>
+            <br><br>
+            <a href="https://www.xbox.com/en-US/games/forza-horizon-4" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Forza_Horizon_4_logo.png" alt="Play Forza Horizon 4">
+            </a>
         </div>
+
+        <!-- Phasmophobia -->
         <div class="game">
             <h2>Phasmophobia</h2>
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Phasmophobia_logo.png/1200px-Phasmophobia_logo.png" alt="Phasmophobia">
-            <p>A chilling co-op ghost hunting experience.</p>
-            <button>Play Now</button>
+            <br><br>
+            <a href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Phasmophobia_logo.png/1200px-Phasmophobia_logo.png" alt="Play Phasmophobia">
+            </a>
         </div>
+
+        <!-- Assetto Corsa -->
         <div class="game">
             <h2>Assetto Corsa</h2>
             <img src="https://upload.wikimedia.org/wikipedia/en/a/a1/Assetto_Corsa_Logo.png" alt="Assetto Corsa">
-            <p>A simulation-focused racing game.</p>
-            <button>Race Now</button>
+            <br><br>
+            <a href="https://store.steampowered.com/app/244210/Assetto_Corsa/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a1/Assetto_Corsa_Logo.png" alt="Play Assetto Corsa">
+            </a>
         </div>
+
+        <!-- BeamNG.drive -->
         <div class="game">
             <h2>BeamNG.drive</h2>
             <img src="https://upload.wikimedia.org/wikipedia/en/e/ef/BeamNG.drive_Logo.png" alt="BeamNG.drive">
-            <p>Realistic driving simulation and crashes.</p>
-            <button>Drive Now</button>
+            <br><br>
+            <a href="https://store.steampowered.com/app/284160/BeamNGdrive/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/en/e/ef/BeamNG.drive_Logo.png" alt="Play BeamNG.drive">
+            </a>
         </div>
-    </section>
-
-    <!-- Footer Section -->
-    <div class="footer">
-        <p>&copy; 2024 Kin's Tech Web. All rights reserved.</p>
     </div>
 
 </body>
