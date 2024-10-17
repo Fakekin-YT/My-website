@@ -26,7 +26,7 @@
         /* Body Styling */
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #0d0d0d; /* Set background to black */
+            background-color: #0d0d0d;
             color: #fff;
             height: 100vh;
             overflow-x: hidden;
@@ -158,30 +158,38 @@
             color: #fff;
         }
 
-        /* Call-to-Action Section Styling */
-        .cta {
-            background: linear-gradient(135deg, #ff005a, #00ffcc);
-            color: #fff;
-            padding: 50px 0;
+        /* About Section Styling */
+        .about {
+            padding: 80px 20px;
+            background-color: #111;
             text-align: center;
+            color: #00ffcc;
         }
-        .cta h2 {
-            font-size: 2.5rem;
+        .about h2 {
+            font-size: 3rem;
             margin-bottom: 20px;
         }
-        .cta button {
-            padding: 12px 40px;
-            background-color: #fff;
-            color: #0d0d0d;
-            border-radius: 30px;
-            border: none;
+        .about p {
             font-size: 1.2rem;
-            cursor: pointer;
-            transition: background 0.3s ease;
+            opacity: 0.8;
+            margin-bottom: 40px;
         }
-        .cta button:hover {
-            background-color: #00ffcc;
+
+        /* Contact Section Styling */
+        .contact {
+            padding: 80px 20px;
+            background-color: #0d0d0d;
+            text-align: center;
             color: #fff;
+        }
+        .contact h2 {
+            font-size: 3rem;
+            color: #00ffcc;
+        }
+        .contact p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-bottom: 40px;
         }
 
         /* Footer Section Styling */
@@ -199,53 +207,41 @@
 
     <!-- Navigation Bar -->
     <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a> <!-- Link to About page -->
-        <a href="#">Games</a>
-        <a href="contact.html">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#games">Games</a>
+        <a href="#contact">Contact</a>
     </div>
 
     <!-- Hero Section -->
-    <section class="header">
+    <section id="home" class="header">
         <div class="header-content">
             <h1>Kin Bio</h1>
             <p>A journey through my life and passions</p>
-            <button onclick="window.location.href='teleport.html'">Teleport Now</button> <!-- Button link to the Teleport page -->
+            <button onclick="window.location.href='#about'">Discover More</button>
         </div>
     </section>
 
     <!-- Games Section -->
-    <section class="games">
-        <div class="game">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/2048px-Steam_icon_logo.svg.png" alt="Steam" loading="lazy">
-            <h2>Steam</h2>
-            <p>Explore all the different games online.</p>
-            <button onclick="window.location.href='https://steamcommunity.com/profiles/76561199209918598/'">Visit my Steam profile</button>
-        </div>
-        <div class="game">
-            <img src="https://m.media-amazon.com/images/I/51rttY7a+9L.png" alt="Spotify" loading="lazy">
-            <h2>Spotify</h2>
-            <p>The beauty of listening to music.</p>
-            <button onclick="window.location.href='https://open.spotify.com/user/31yi7du5x3gopq37mu24yex3yf34'">Visit my Spotify Profile</button>
-        </div>
-        <div class="game">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA8tp_RfCEDIf6Q8t3UK2k014lUZNBMbnQj6CVRqiR22jZouRsjj7YFfOnsS64Otvvw6E&usqp=CAU" alt="Roblox" loading="lazy">
-            <h2>Roblox</h2>
-            <p>Create, explore, and share worlds in Roblox.</p>
-            <button onclick="window.location.href='https://www.roblox.com/users/1711315566/profile'">Visit My Roblox Profile</button>
-        </div>
-        <!-- Add more games as needed -->
+    <section id="games" class="games">
+        <!-- Add game cards here as before -->
     </section>
 
-    <!-- Call-to-Action Section -->
-    <section class="cta">
-        <h2>Want to know more?</h2>
-        <button onclick="window.location.href='about.html'">About Me</button> <!-- Button link to About page -->
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I'm Kin, a passionate web developer with a love for futuristic technology, games, and creative design.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me at: kin@futuristicweb.com</p>
     </section>
 
     <!-- Footer Section -->
     <div class="footer">
-        &copy; 2024 Kin Bio. All rights reserved.
+        <p>&copy; 2024 Kin's Tech Web. All rights reserved.</p>
     </div>
 
 </body>
