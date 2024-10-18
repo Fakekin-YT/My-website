@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Follow me on social media. Connect with me on TikTok, Instagram, Twitter, and YouTube.">
+    <title>Social</title>
+    <style>
+        /* Navbar Styles */
+        .navbar {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            position: fixed;
+            top: 0;
+            padding: 20px;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center; /* Center navbar items */
+        }
+
+        .navbar a {
+            color: #00ffcc;
+            text-decoration: none;
+            margin: 0 30px;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #00ffcc;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 150px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #00ffcc;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 50px;
+        }
+
+        /* Social Media Grid */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Set four columns */
+            gap: 20px;
+            justify-items: center;
+            padding: 20px;
+        }
+
+        .social-item {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 150px;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .social-item:hover {
+            transform: scale(1.05);
+        }
+
+        .social-item img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .social-item a {
+            display: block;
+            color: #00ffcc;
+            margin-top: 10px;
+            font-size: 1.1rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="social.html">Social</a>
+    </div>
+
+    <div class="container">
+        <h1>Follow Me on Social Media</h1>
+
+        <div class="social-grid">
+            <div class="social-item">
+                <a href="https://www.instagram.com/kingaming__/">Instagram 
+                    <div>(Private account)</div></a>
+            </div>
+            <div class="social-item">
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fdiscord.gg%2FsQ3NUwV4jP%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaZqGfD7yP_jYVgCA9aPa8CG2gMptd6-zHdNoN18ruJ-2-mXKppmloLn59o_aem_E9e9BbD6k3ZXGFGhvnvXcQ&e=AT2ahvPiUKfaW8Ob-ZqOl9UhK2oQSfrhkpcovTn42arjer3Y2FPjDvj3ldJK2DcQhIorQTyWoNDNeA41nJD_hD46ZntEB5I4-7Zlkaxl_fGI-TkDKP9d7J4">Discord</a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.tiktok.com/@kingaming71">TikTok</a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.youtube.com/@kingaming4078">YouTube</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
