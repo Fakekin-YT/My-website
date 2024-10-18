@@ -1,95 +1,117 @@
-[33mcommit ef5029c4783d836b9790ff7c8a2f0c6bb5050bca[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Fri Oct 18 11:37:40 2024 +0800
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Follow me on social media. Connect with me on TikTok, Instagram, Twitter, and YouTube.">
+    <title>Social</title>
+    <style>
+        /* Navbar Styles */
+        .navbar {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            position: fixed;
+            top: 0;
+            padding: 20px;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center; /* Center navbar items */
+        }
 
-    Added social accout that you can follow!
+        .navbar a {
+            color: #00ffcc;
+            text-decoration: none;
+            margin: 0 30px;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
 
-[33mcommit 66f35e959805f22b0ed89593509684029749920a[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Fri Oct 18 00:34:02 2024 +0800
+        /* Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #00ffcc;
+            margin: 0;
+            padding: 0;
+        }
 
-    Added photos to games
+        .container {
+            margin-top: 150px;
+            text-align: center;
+        }
 
-[33mcommit 1c582561c9a840ec729dfa3eb03f65c45fe4df94[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Thu Oct 17 23:07:47 2024 +0800
+        h1 {
+            font-size: 2.5rem;
+            color: #00ffcc;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 50px;
+        }
 
-    Updated games.html with logos and links
+        /* Social Media Grid */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Set four columns */
+            gap: 20px;
+            justify-items: center;
+            padding: 20px;
+        }
 
-[33mcommit 84a4a4e29e966a641801712bdcd0250bd806deab[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Thu Oct 17 23:02:13 2024 +0800
+        .social-item {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 150px;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
 
-    Updated games.html with game logos and play links
+        .social-item:hover {
+            transform: scale(1.05);
+        }
 
-[33mcommit 8891bd5943242d6ea377e9c0957d7409527e9799[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Thu Oct 17 22:54:54 2024 +0800
+        .social-item img {
+            width: 40px;
+            height: 40px;
+        }
 
-    Updated games.html for improved styling and navigation
+        .social-item a {
+            display: block;
+            color: #00ffcc;
+            margin-top: 10px;
+            font-size: 1.1rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
 
-[33mcommit 8fd7358e456b81d53037cfde49fa32ab7d1a66be[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Thu Oct 17 17:34:41 2024 +0800
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="social.html">Social</a>
+    </div>
 
-    Added .gitignore to exclude certain files
+    <div class="container">
+        <h1>Follow Me on Social Media</h1>
 
-[33mcommit a07f88329e53b3da01123a6a39b44efb49919377[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Thu Oct 17 17:34:20 2024 +0800
+        <div class="social-grid">
+            <div class="social-item">
+                <a href="https://www.instagram.com/kingaming__/">Instagram 
+                    <div>(Private account)</div></a>
+            </div>
+            <div class="social-item">
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fdiscord.gg%2FsQ3NUwV4jP%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaZqGfD7yP_jYVgCA9aPa8CG2gMptd6-zHdNoN18ruJ-2-mXKppmloLn59o_aem_E9e9BbD6k3ZXGFGhvnvXcQ&e=AT2ahvPiUKfaW8Ob-ZqOl9UhK2oQSfrhkpcovTn42arjer3Y2FPjDvj3ldJK2DcQhIorQTyWoNDNeA41nJD_hD46ZntEB5I4-7Zlkaxl_fGI-TkDKP9d7J4">Discord</a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.tiktok.com/@kingaming71">TikTok</a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.youtube.com/@kingaming4078">YouTube</a>
+            </div>
+        </div>
+    </div>
 
-    Added untracked files
-
-[33mcommit 84dc5cffb2942edbbed491d5385e7a5d68c23454[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Thu Oct 17 17:32:41 2024 +0800
-
-    Updated navigation link to the games page
-
-[33mcommit 48f6a87df2265924f7df99fe13c75c1cb2867b36[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Thu Oct 17 17:20:16 2024 +0800
-
-    Added games page and updated navigation
-
-[33mcommit 6acc738a64f2481373d52de1a9ca85a7a1ff230c[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Thu Oct 17 17:00:44 2024 +0800
-
-    Added navigation and games page
-
-[33mcommit 3100167c4327168d3f50cb3d6959a906506d3c80[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Thu Oct 17 16:46:17 2024 +0800
-
-    Combined main and games pages
-
-[33mcommit be788a9ee11f7d494678f57584ac05c3c0894cc3[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Thu Oct 17 16:00:56 2024 +0800
-
-    Extanded the code / web
-
-[33mcommit 5710404ab4b6f3c2e090a5b0c7e8b6045c215cd0[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Thu Oct 17 15:43:16 2024 +0800
-
-    Updated background to black and added About/Teleport links
-
-[33mcommit 518227ab396e6e41cb1bea3dc26635e7134ba43a[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Thu Oct 17 15:35:17 2024 +0800
-
-    Updated the index.html file
-
-[33mcommit dbfb315a28fad21e20f01fdf6671ccd97875fd76[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Mon Sep 23 19:59:41 2024 +0800
-
-    Describe the changes you made
-
-[33mcommit 019d16de2daa1a4eb7e0bb434ab09acfeb0fa62c[m
-Author: Kin <Fakekin17@gmail.com>
-Date:   Mon Sep 23 18:50:19 2024 +0800
-
-    Initial commit
+</body>
+</html>
